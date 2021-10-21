@@ -1,0 +1,16 @@
+{
+  "name": "server-main",
+  "version": "1.0.0",
+  "description": "author Theetouch Kasemarnontana",
+  "main": "testEndpoint.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.23.0",
+    "jest": "^27.3.1"
+  },
+  "dependencies": {}
+}
