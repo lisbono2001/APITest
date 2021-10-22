@@ -77,7 +77,7 @@ test("Test get all people structure", () => {
  * Test Case ID: 6
  * Test structure of a person from '/by_date/:date' response
  */
-test("Test a people structure", () => {
+test("Test get a person structure", () => {
     const date = "20-10-2021"
     const endpoint = URL + "/by_date/" + date;
     axios.get(endpoint)
