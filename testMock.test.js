@@ -43,7 +43,10 @@ jest.mock('./axiosConfig', () => {
     }
 });
 
-describe('test getPeopleByDate', () => {
+/**
+ * Tring to use mock tesing for test fetching data from '/by_date/:date'
+ */
+describe('test getPeopleByDate mock', () => {
     // reset the state of all mocks.
     afterEach(() => jest.resetAllMocks());
 
