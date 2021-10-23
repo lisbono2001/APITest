@@ -2,6 +2,8 @@
 
 author Theetouch Kasemarnontana
 
+see project [wiki](https://github.com/lisbono2001/APITest/wiki)
+
 ## Getting Start
 Install testing tool packages
 ```
@@ -56,4 +58,4 @@ File called **axiosConfig.js** is configuration of the Axios client. Configuring
 ---
 ## Mock Test
 
-I will set up a Node.js app that will make HTTP calls to a JSON API containing photos vacine reservations. Jest will be used to mock the API calls in our tests.
+I will set up a Node.js app that will make HTTP calls to a JSON API containing vaccine reservations. Jest will be used to mock the API calls in our tests.
