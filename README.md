@@ -54,8 +54,3 @@ We will be using axios as our HTTP client. Axios is a lightweight, promise-based
 npm i axios --save-dev
 ```
 File called **axiosConfig.js** is configuration of the Axios client. Configuring the client allows us to use common settings across a set of HTTP requests.
-
----
-## Mock Test
-
-I will set up a Node.js app that will make HTTP calls to a JSON API containing vaccine reservations. Jest will be used to mock the API calls in our tests.
