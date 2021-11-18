@@ -28,7 +28,7 @@ function axiosPost(endpoint) {
 }
 
 /**
- * POST request to specific endpoint
+ * DELETE request to specific endpoint
  * @param {string} endpoint 
  * @returns Promise of http response
  */
