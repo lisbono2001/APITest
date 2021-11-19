@@ -2,9 +2,11 @@
 
 author Theetouch Kasemarnontana
 
-see project [wiki](https://github.com/lisbono2001/APITest/wiki)
+For the tests result
+see project [wiki](https://github.com/lisbono2001/vaccine-api-test/wiki)
 
 ## Getting Start
+### for npm users
 Install testing tool packages
 ```
 npm install
@@ -13,6 +15,16 @@ How to run all tests?
 ```
 npm run test
 ```
+### for yarn users
+Install testing tool packages
+```
+yarn
+```
+How to run all tests?
+```
+yarn test
+```
+
 ---
 ## Tools in this project
 ### Jest
