@@ -191,21 +191,6 @@ describe("Test status codes" , () => {
 
     /**
      * Test Case ID: 10
-     * Test GET people by_reservationID:reservationId response status code
-     * when that date has values stored in database
-     * Expected Value : 200 - OK
-     */
-         test("Test status code GET people by reservationId", () => {
-            const reservationId = "10000";
-            const endpoint = URL + "/by_reservationID/" + reservationId;
-            return axiosGet(endpoint)
-            .then(data => {
-                expect(data.status).toEqual(204);
-            })
-        });
-
-    /**
-     * Test Case ID: 11
      * Test status code of '/count/total/:date'
      * when that date has values stored in database
      * Expected value : 200 - OK
@@ -220,7 +205,7 @@ describe("Test status codes" , () => {
     });
 
     /**
-     * Test Case ID: 12
+     * Test Case ID: 11
      * Test status code of '/count/total/:date'
      * when that date has no values stored in database
      * Expected value : 400 - Bad Input
@@ -236,7 +221,7 @@ describe("Test status codes" , () => {
     });
 
     /**
-     * Test Case ID: 13
+     * Test Case ID: 12
      * Test status code of '/count/total/:date'
      * when that date has values stored in database
      * Expected value : 400 - Bad Input
@@ -253,7 +238,7 @@ describe("Test status codes" , () => {
 
 
     /**
-     * Test Case ID: 14
+     * Test Case ID: 13
      * Test status code of '/count/total/:date'
      * when the date param is empty
      * Expected value : 406 - Bad Input
@@ -269,7 +254,7 @@ describe("Test status codes" , () => {
     });
 
     /**
-     * Test Case ID: 15
+     * Test Case ID: 14
      * Test status code of '/count/walkin/:date'
      * when that date has values stored in database
      * Expected value : 200 - OK
@@ -284,12 +269,12 @@ describe("Test status codes" , () => {
     });
 
     /**
-     * Test Case ID: 16
+     * Test Case ID: 15
      * Test status code of '/count/walkin/:date'
      * when that date has no values stored in database
      * Expected value : 400 - Bad Input
      */
-    test("Test status code GET count people by date (invalid date param)", () => {
+    test("Test status code GET count people by date (no value)", () => {
         const date = "11-11-3000";
         const endpoint = URL + "/count/walkin/" + date;
         return axiosGet(endpoint)
@@ -300,7 +285,7 @@ describe("Test status codes" , () => {
     });
 
     /**
-     * Test Case ID: 17
+     * Test Case ID: 16
      * Test status code of '/count/walkin/:date'
      * when that date has values stored in database
      * Expected value : 400 - Bad Input
@@ -316,12 +301,12 @@ describe("Test status codes" , () => {
     });
 
     /**
-     * Test Case ID: 18
+     * Test Case ID: 17
      * Test status code of '/count/walkin/:date'
      * when the date param is empty
      * Expected value : 406 - Bad Input
      */
-        test("Test status code GET count people by date (invalid date param)", () => {
+        test("Test status code GET count people by date (empty date param)", () => {
         const date = "";
         const endpoint = URL + "/count/walkin/" + date;
         return axiosGet(endpoint)
@@ -332,7 +317,7 @@ describe("Test status codes" , () => {
     });
 
     /**
-     * Test Case ID: 19
+     * Test Case ID: 18
      * Test status code of POST method when POST a data to database
      * Expected value : 200 - OK
      */
@@ -346,7 +331,7 @@ describe("Test status codes" , () => {
     });
 
     /**
-     * Test Case ID: 20
+     * Test Case ID: 19
      * Test status code of POST method when POST duplicate data to database
      * Expected value : 401
      */
@@ -360,7 +345,7 @@ describe("Test status codes" , () => {
     });
 
     /**
-     * Test Case ID: 21
+     * Test Case ID: 20
      * Test status code of DELETE method when DELETE a date from database
      * Expected value : 200 - OK
      */
@@ -374,7 +359,7 @@ describe("Test status codes" , () => {
     })
 
     /**
-     * Test Case ID: 22
+     * Test Case ID: 21
      * Test status code of DELETE method when DELETE a date from database
      * Expected value : 200 - OK
      */
